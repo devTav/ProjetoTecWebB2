@@ -43,4 +43,4 @@ npx json-server --watch db.json --port 3001
 npm run dev
 ```
 
-4. Acesse em [text](http://localhost:5173)
+4. Acesse em [localhost:5173](http://localhost:5173)
