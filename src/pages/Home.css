@@ -1,0 +1,67 @@
+/* src/pages/Home.css */
+
+#lista-itens {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.item {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.item h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.item p {
+  margin: 0.25rem 0;
+}
+
+.item small {
+  color: #666;
+  font-size: 0.85rem;
+}
+
+.item button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.item button:hover {
+  background-color: #c0392b;
+}
+
+@media (max-width: 600px) {
+  #lista-itens {
+    padding: 1rem;
+  }
+
+  .item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .item button {
+    margin-top: 0.5rem;
+    align-self: flex-end;
+  }
+}
